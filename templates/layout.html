@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact flask APP</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://jblazquez.es/wp-content/uploads/2022/04/cropped-cropped-cropped-images-508x508-1.png" alt="" width="30" height="24">
+    </a>
+  </div>
+</nav>
+
+    <div class="container pt-4">
+    {% block body%}
+    {% endblock%}
+      </div>
+<!-- SCRIPTS -->
+<script src="{{url_for('static', filename='js/main.js')}}">
+</script>
+  </body>
+</html>
